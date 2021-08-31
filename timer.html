@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="timer.css">
+    <script src="timer.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Stop Watch</h1>
+        <div class="circle">
+
+            <div style="display: flex; justify-content: center; align-items: center; height: inherit;">
+                <input id="min" type="text" placeholder="00" disabled>
+                <input id="sec" type="text" placeholder="00" disabled>
+                <input id="mSec" type="text" placeholder="00" disabled>
+            </div>
+
+        </div>
+
+        <div id="button">
+            <button id="start" onclick="startBtn()"> Start </button>
+            <button id="pause" onclick="pauseBtn()" disabled> Pause </button>
+            <button id="reset" onclick="resetBtn()" disabled> Reset </button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
